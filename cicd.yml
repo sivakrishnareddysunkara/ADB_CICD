@@ -1,0 +1,9 @@
+name: CICD Pipeline 
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  compile:
+    runs-on: self-hosted
