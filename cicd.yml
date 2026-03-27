@@ -6,4 +6,4 @@ on:
 
 jobs:
   compile:
-    runs-on: self-hosted
+    runs-on: Sivakrishnas-MacBook-Air
