@@ -1,13 +1,12 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# NOTE: This pipeline has been migrated to GitHub Actions (.github/workflows/cicd.yml).
+# GitHub Actions provides free CI/CD minutes and does not require a hosted parallelism grant.
+# See: https://github.com/sivakrishnareddysunkara/ADB_CICD/actions
 
 trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
 
 steps:
 - script: echo Hello, world!
