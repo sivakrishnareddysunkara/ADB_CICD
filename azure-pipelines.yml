@@ -1,19 +1,13 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Azure Pipelines is DISABLED for this repository.
+# CI is handled entirely by GitHub Actions (.github/workflows/cicd.yml).
+# Triggers are set to none to prevent "no hosted parallelism" / missing agent errors.
 
-trigger:
-- main
+trigger: none
+pr: none
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: echo Azure Pipelines is disabled. See GitHub Actions for CI.
+  displayName: 'CI disabled - use GitHub Actions'
